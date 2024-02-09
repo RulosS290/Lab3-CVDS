@@ -268,12 +268,15 @@ Complete la implementación del método registerVoter en la clase Registry.java 
 
 **EJERCICIO "DESCUENTO DE TARIFAS"**
 
-**IMPLEMENTACIÓN DE LAS PRUEBAS**
+**IMPLEMENTACIÓN DE LAS PRUEBAS**  
 Descargue el archivo aerodescuentos.jar y adicione esta nueva dependencia en el archivo pom.xml de su proyecto.
 
 Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando.
 
 $ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -Dversion=1.0.0 -Dpackaging=jar
+
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/50c578aa-1732-4719-b4ad-b172a0a23a04)
+
 Cree el archivo TarifasTest.java en el directorio src/test/java/edu/eci/cvds/tdd/aerodescuentos.
 
 Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método calculoTarifa de la clase edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos, que se encuentran dentro del JAR de la librería personalizada.
