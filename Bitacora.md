@@ -250,19 +250,21 @@ Revise cual es la diferencia. Tip: https://www.devopsschool.com/blog/maven-tutor
 **FINALIZAR EL EJERCICIO**    
 Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría dadas las condiciones. Deben ser al menos 5.  
 
+```   
 1. Una persona de 140 años (No valido)   
 2. Una persona menor de 18 años (No valido)  
 3. Una persona que no está viva (No valido)  
 4. Una persona viva de 20 años (Valido)   
 5. Una persona con edad negativa (No valido)   
+```  
 
 Complete la implementación de la clase RegistryTest.java con (al menos) un método por cada clase de equivalencia, creando diferentes personas y validando que el resultado sea el esperado.
+
+
 
 Complete la implementación del método registerVoter en la clase Registry.java para retornar el resultado esperado según la entrada.
 
 **EJERCICIO "DESCUENTO DE TARIFAS"**
-REALIZAR DISEÑO DE PRUEBAS
-Para realizar de forma correcta el diseño de sus pruebas responda las preguntas que se encuentran en el siguiente documento.
 
 **IMPLEMENTACIÓN DE LAS PRUEBAS**
 Descargue el archivo aerodescuentos.jar y adicione esta nueva dependencia en el archivo pom.xml de su proyecto.
