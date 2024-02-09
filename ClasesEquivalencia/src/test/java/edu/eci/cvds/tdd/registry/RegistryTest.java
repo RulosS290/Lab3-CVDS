@@ -37,7 +37,7 @@ public class RegistryTest {
         Person person = new Person("Fabiola",13, 20, Gender.FEMALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.VALID, result);
-    }git 
+    }git
 
     @Test
     public void testPersonaEdadNegativa() {
