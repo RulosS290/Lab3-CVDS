@@ -1,44 +1,45 @@
 * LABORATORIO 3 - TDD
 **CLASES DE EQUIVALENCIA
 CREAR UN PROYECTO CON MAVEN
-En el directorio de trabajo ejecutar el comando necesario para crear/generar un proyecto maven basado en un arquetipo:
+En el directorio de trabajo ejecutar el comando necesario para crear/generar un proyecto maven basado en un arquetipo:   
+  
+```  
+Grupo (groupId): edu.eci.cvds    
+Artefacto (artifactId): ClasesEquivalencia    
+Paquete (package): edu.eci.cvds.tdd    
+archetypeArtifactId: maven-archetype-quickstart    
+```  
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/bcb3ea8e-f3a9-4417-ab0c-e2c5590ed56d)
 
-Grupo (groupId): edu.eci.cvds  
-Artefacto (artifactId): ClasesEquivalencia  
-Paquete (package): edu.eci.cvds.tdd  
-archetypeArtifactId: maven-archetype-quickstart  
-
-<img width="392" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/89041250/eedca728-d43d-4d69-a44a-985d7540a57b">
-
-*ACTUALIZAR Y CREAR DEPENDENCIAS EN EL PROYECTO*
+**ACTUALIZAR Y CREAR DEPENDENCIAS EN EL PROYECTO**  
 Busque en internet el repositorio central de maven.
 
 Busque el artefacto JUnit y entre a la versión más nueva. imagen
 
 Ingrese a la pestaña de Maven y haga click en el texto de la dependencia para copiarlo al portapapeles.
 
-Edite el archivo pom.xml y realice las siguientes actualizaciones: - Agregue/Reemplace la dependencia copiada a la sección de dependencias. - Hay que cambiar la versión delcompilador de Java a la versión 8, para ello, agregue la sección properties antes de la sección de dependencias:
+Edite el archivo pom.xml y realice las siguientes actualizaciones: - Agregue/Reemplace la dependencia copiada a la sección de dependencias. - Hay que cambiar la versión delcompilador de Java a la versión 8, para ello, agregue la sección properties antes de la sección de dependencias:  
+  
+```   
+<properties>  
+<maven.compiler.target>1.8</maven.compiler.target>  
+<maven.compiler.source>1.8</maven.compiler.source>  
+</properties>  
+```  
 
-<properties>
-<maven.compiler.target>1.8</maven.compiler.target>
-<maven.compiler.source>1.8</maven.compiler.source>
-</properties>
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/7d19094e-f744-4bb5-81a0-e74d6477aedd)
 
-<img width="401" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/146139366/f16c0973-a98c-45fb-aeb5-78770cd9a738">
-
-
-COMPILAR Y EJECUTAR
+**COMPILAR Y EJECUTAR**  
 Ejecute los comandos necesarios de Maven, para compilar el proyecto y verificar que el proyecto se creó correctamente y los cambios realizados al archivo pom no generan inconvenientes.
 
-<img width="471" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/146139366/accc8944-c9ac-4706-b84c-02db5068b73a">
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/7dac96c7-a22c-4c88-9cde-cc836945d57d)
 
+Busque el comando requerido para ejecutar las pruebas unitarias de un proyecto desde Maven y ejecútelo sobre el proyecto. Se debe ejecutar la clase AppTest con resultado exitoso.    
+*Se puede hacer con: mvn test*
 
-Busque el comando requerido para ejecutar las pruebas unitarias de un proyecto desde Maven y ejecútelo sobre el proyecto. Se debe ejecutar la clase AppTest con resultado exitoso.  
-**mvn test**
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/5f3cf9f1-ed2c-41bd-9f8a-c1e0b82da2da)
 
-<img width="640" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/89041250/622bd000-2fc8-4f3d-bf43-3656dea5769c">
-
-**EJERCICIO “REGISTRADURÍA”**  
+**EJERCICIO “REGISTRADURÍA”**    
 Se va a crear un proyecto base para un cliente en la registraduría, en el cual se registrarán personas con intención de votar para las próximas elecciones y se generarán los certificados electorales de aquellas personas cuyo voto sea válido.
 
 Se usará la clase persona qué se describe más adelante. El servicio de la registradiría permitirá registrar personas que sean votantes.
@@ -47,7 +48,7 @@ Se usará la clase persona qué se describe más adelante. El servicio de la reg
 Solo se registrarán votantes válidos  
 Solo se permite una inscripción por número de documento  
 
-**HACER EL ESQUELETO DE LA APLICACION**  
+**HACER EL ESQUELETO DE LA APLICACION**    
 Cree el archivo RegisterResult.java en el directorio edu.eci.cvds.tdd.registry con la enumeración:
 
 package edu.eci.cvds.tdd.registry;
@@ -205,8 +206,7 @@ public class Registry {
     }
 }
 
-<img width="585" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/146139366/2c8bd7c8-cbec-4562-96a9-da1cdf2846b5">
-
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/6b5055fe-3d2b-4348-a9ee-fed7a0b1a706)
 
 Cree la misma estructura de paquetes edu.eci.cvds.tdd.registry en la ruta src/test/java. Todos los archivos relacionados específicamente con los temas de pruebas, siempre deben ir bajo la carpeta test.
 
@@ -228,38 +228,39 @@ public class RegistryTest {
     // TODO Complete with more test cases
 }
 
-<img width="532" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/146139366/132800f4-8885-429c-b756-927c369252c0">
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/68305661-a5e4-4c8c-a329-8f64d2cf255d)
 
-
-EJECUTAR LAS PRUEBAS
-Para correr las pruebas utilice:
+**EJECUTAR LAS PRUEBAS**  
+Para correr las pruebas utilice:  
 
 $ mvn package
 
-<img width="457" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/89041250/2f29c78d-ca23-4a92-a699-210f5255f977">
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/b87716b9-7993-4575-b494-8445d38f0907)
 
 También puede utilizar:
 
 $ mvn test
 
-<img width="805" alt="image" src="https://github.com/RulosS290/Lab3CVDS/assets/89041250/be319d1e-372e-4e03-8ab5-903f6ef8cdfa">
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/49d9b9ba-c771-4839-99ec-87875cd2c6fb)
 
 Revise cual es la diferencia. Tip: https://www.devopsschool.com/blog/maven-tutorials-maven-lifecycle-phases-goal
 
-**FINALIZAR EL EJERCICIO**  
-Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría dadas las condiciones. Deben ser al menos 5.
+***mvn test se utiliza para ejecutar pruebas unitarias y verificar el comportamiento del código durante el desarrollo, mvn package se utiliza para compilar el código en un formato distribuible.***
+  
+**FINALIZAR EL EJERCICIO**    
+Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría dadas las condiciones. Deben ser al menos 5.  
 
-1. Una persona de 140 años (No valido) 
-2. Una persona menor de 18 años (No valido)
-3. Una persona que no está viva (No valido)
-4. Una persona viva de 20 años (Valido) 
-5. Una persona con edad negativa (No valido) 
+1. Una persona de 140 años (No valido)   
+2. Una persona menor de 18 años (No valido)  
+3. Una persona que no está viva (No valido)  
+4. Una persona viva de 20 años (Valido)   
+5. Una persona con edad negativa (No valido)   
 
 Complete la implementación de la clase RegistryTest.java con (al menos) un método por cada clase de equivalencia, creando diferentes personas y validando que el resultado sea el esperado.
 
 Complete la implementación del método registerVoter en la clase Registry.java para retornar el resultado esperado según la entrada.
 
-EJERCICIO "DESCUENTO DE TARIFAS"
+**EJERCICIO "DESCUENTO DE TARIFAS"**
 REALIZAR DISEÑO DE PRUEBAS
 Para realizar de forma correcta el diseño de sus pruebas responda las preguntas que se encuentran en el siguiente documento.
 
@@ -274,9 +275,3 @@ Cree el archivo TarifasTest.java en el directorio src/test/java/edu/eci/cvds/tdd
 Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método calculoTarifa de la clase edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos, que se encuentran dentro del JAR de la librería personalizada.
 
 Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado.
-
-ENTREGAR
-Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
-Agregar y configurar el archivo .gitignore del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado. (ej. .classpath, .idea, .settings, etc.).
-Agregar el nombre de los integrantes que realizaron el laboratorio. Puede ser en un archivo integrantes.txt o agregándolos en el archivo Readme del repositorio.
-Terminar el laboratorio antes de la próxima sesión de laboratorio.
