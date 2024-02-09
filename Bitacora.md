@@ -260,9 +260,11 @@ Piense en los casos de equivalencia que se pueden generar del ejercicio para la 
 
 Complete la implementación de la clase RegistryTest.java con (al menos) un método por cada clase de equivalencia, creando diferentes personas y validando que el resultado sea el esperado.
 
-
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/e9b84b2d-7c3c-45e0-86eb-ba468ce5974b)
 
 Complete la implementación del método registerVoter en la clase Registry.java para retornar el resultado esperado según la entrada.
+
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/3cab25a6-bdf6-4702-ba61-659813e1c1b3)
 
 **EJERCICIO "DESCUENTO DE TARIFAS"**
 
