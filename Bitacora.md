@@ -264,7 +264,7 @@ Complete la implementación del método registerVoter en la clase Registry.java 
 REALIZAR DISEÑO DE PRUEBAS
 Para realizar de forma correcta el diseño de sus pruebas responda las preguntas que se encuentran en el siguiente documento.
 
-IMPLEMENTACIÓN DE LAS PRUEBAS
+**IMPLEMENTACIÓN DE LAS PRUEBAS**
 Descargue el archivo aerodescuentos.jar y adicione esta nueva dependencia en el archivo pom.xml de su proyecto.
 
 Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando.
