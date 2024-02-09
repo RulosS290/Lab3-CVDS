@@ -279,6 +279,15 @@ $ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvd
 
 Cree el archivo TarifasTest.java en el directorio src/test/java/edu/eci/cvds/tdd/aerodescuentos.
 
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/bed8ff6c-6785-4b11-9750-4897b3a6d0bd)
+
 Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método calculoTarifa de la clase edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos, que se encuentran dentro del JAR de la librería personalizada.
 
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/d43b370e-2853-4dd2-93df-4528a1fd5895)
+
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/979e7c82-5c94-4daf-ba79-347fa8458003)
+
 Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado.
+
+![image](https://github.com/RulosS290/Lab3-CVDS/assets/89041250/06690034-81f4-4ea5-8944-3e3f7084c0d5)
+
